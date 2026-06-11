@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghostbusters!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial Black', Impact, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff3333;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.7);
+            margin-bottom: 2rem;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        .answer {
+            font-size: 5rem;
+            color: #33ff33;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 20px rgba(51, 255, 51, 0.9), 0 0 30px rgba(51, 255, 51, 0.5);
+            display: block;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Ikona zabrane duhova napravljena pomoću CSS-a */
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 15px solid #ff3333;
+            border-radius: 50%;
+            margin: 0 auto 3rem auto;
+            position: relative;
+            box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+        }
+
+        .logo-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            width: 150px;
+            height: 15px;
+            background-color: #ff3333;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .answer { font-size: 3rem; }
+            .logo-placeholder { width: 100px; height: 100px; border-width: 10px; }
+            .logo-placeholder::before { width: 100px; height: 10px; left: -10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-placeholder"></div>
+        <h1>If there's something strange in your neighborhood... <br>Who you gonna call?</h1>
+        <span class="answer">GHOSTBUSTERS!</span>
+    </div>
+
+</body>
+</html>
