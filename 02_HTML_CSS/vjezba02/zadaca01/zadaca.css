@@ -1,0 +1,55 @@
+body{
+    background-color: green;
+    
+}
+.box {
+    width: 90%;
+    margin: auto;
+    outline-style: auto;
+    border-radius: 12px;
+    outline-width: 2px;
+    outline-color: #b3d3b3 ;
+    background-color: aliceblue ;
+    border: 0px solid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+
+
+
+
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.littlebox{
+    width: 95%;
+    margin: auto;
+    outline-style: auto;
+    border-radius: 12px;
+    outline-width: 2px;
+    outline-color:antiquewhite ;
+    background-color: aliceblue ;
+    border: 0px solid;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+}
+
+p{
+    text-align: center;
+}
+
+#oblik_teksta{
+    font-family: sans-serif;
+    font-style: italic;
+}
