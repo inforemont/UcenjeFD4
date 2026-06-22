@@ -2,6 +2,7 @@ body{
     background-color: green;
     
 }
+/**glavni obrub**/
 .box {
     width: 90%;
     margin: auto;
@@ -21,13 +22,30 @@ body{
 
 
 }
-h1{
+/** velicina glavnog naslova **/
+.h1naslov{
     text-align: center;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     
     
 }
+/**velicina i oblik podnaslova**/
+.h2podnaslov{
+    text-align: center;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #8e8888;
+}
+/**velicina pocetnih slova O naspram ostalih sa span funkcijom**/
+.velikoslovoO{
+    font-size: 1.3em;
+}/** velicina pocetnog slova W naspram ostalih slova sa span funkcijom **/
+.velikoslovoW{
+    font-size: 1.3em;
+}
+/**sekundarni obrub u glavnom obrubu gdje je slika**/
 .littlebox{
     width: 95%;
     margin: auto;
@@ -47,6 +65,7 @@ h1{
 
 p{
     text-align: center;
+    font-size: larger;
 }
 
 #oblik_teksta{
