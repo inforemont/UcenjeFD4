@@ -26,11 +26,11 @@ tfoot td {
     background-color: #ffbe98;
 }
 
-tbody tr :hover{
+tbody tr:hover{
     background-color: aqua;
 }
 
-tbody td:first-child{
+tbody tr :first-child{
     text-align: right;
 }
 

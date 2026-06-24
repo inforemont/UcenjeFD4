@@ -51,6 +51,60 @@
         </tfoot>
     </table>
 
+    <hr>
+
+    <form action="https://origo.hr" method="get">
+        <fieldset>
+            <legend>Podaci o osiguraniku</legend>
+            
+            <input type="text" name="ime" id="ime" placeholder="unesite svoje ime">
+
+            <hr>
+            <input type="radio" name="nacin" id="online" value="online">
+            <label for="online">Online</label>
+
+            <br>
+
+            <input type="radio" name="nacin" id="neposredno" value="neposredno">
+            <label for="neposredno">Uživo</label>
+
+            <hr>
+
+            <input type="password" name="lozinka" id="lozinka" placeholder="Unesite lozinku">
+
+            <hr>
+
+            <select name="mjesec" id="mjesec">
+                <option value="1">Siječanj</option>
+                <option value="2">Veljača</option>
+                <option value="3">Ožujak</option>
+                <option value="4">Travanj</option>
+                <option value="5">Svibanj</option>
+                <option value="6">Lipanj</option>
+                <option value="7">Srpanj</option>
+                <option value="8">Kolovoz</option>
+                <option value="9">Rujan</option>
+                <option value="10">Listopad</option>
+                <option value="11">Studeni</option>
+                <option value="12">Prosinac</option>
+            </select>
+
+            <hr>
+            <textarea name="poruka" id="poruka" cols="30" rows="10"></textarea>
+
+            <hr>
+
+            <button>Predaj</button>
+
+
+
+
+
+
+
+        </fieldset>
+    </form>
+
 
 
 </body>
