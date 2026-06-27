@@ -81,10 +81,11 @@ body{
 
 
 }
+/**postavke paragrafa van boxeva**/
 p{
     width:  98%;
     text-align:justify;
-    font-size: larger;
+    font-size: 30px;
     margin: 20px auto;
 
 
@@ -98,11 +99,60 @@ p{
 .h2kljucneverzije{
     width:  98%;
     text-align:left;
-    font-size:  30px;
+    font-size:  40px;
     margin: 20px auto;
     
 }
 
-#lista{
-    
+.h2strukturadokumenta{
+
+    width:  98%;
+    text-align:left;
+    font-size:  40px;
+    margin: 20px auto;
+
+}
+
+ul{
+    border-left: 4px solid blue;
+    margin-left: 1rem;
+    list-style-type: none;
+}
+li{
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    font-size: 25px;
+}
+.bojateksta{
+    color: orange;
+}
+/**velicina teksta van boxa, moglo je i kao paragraf, ali napravljeno je preko klase**/
+.velicinatekstaOsnovna{
+    width:  98%;
+    text-align:justify;
+    font-size: 30px;
+    margin: 20px auto;
+}
+/**box u kojem je crna pozadina sa bijelim tekstom**/
+.trecibox{
+
+    width: 95%;
+    margin: auto;
+    outline-style: auto;
+    border-radius: 12px;
+    outline-width: 2px;
+    outline-color:antiquewhite ;
+    background-color: black;
+    border: 0px solid;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.h3koduboxu{
+    size: 30px;
+    color: white;
+
 }
