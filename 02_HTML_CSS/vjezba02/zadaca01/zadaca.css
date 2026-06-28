@@ -145,14 +145,72 @@ li{
     background-color: black;
     border: 0px solid;
     padding-top: 1rem;
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-left: 12px solid orange
 
 }
 
 .h3koduboxu{
     size: 30px;
     color: white;
+    font-size: 30px;
+    padding-left: 1rem;
+    font-family: monospace;
 
 }
+.vaznipojmovibox{
+    background-color: gainsboro;
+     width: 95%;
+    margin: auto;
+    outline-style: auto;
+    border-radius: 12px;
+    outline-width: 2px;
+    outline-color: gainsboro;
+    border: 0px solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.h3koduboxu3{
+    size: 30px;
+    color: black;
+    font-size: 30px;
+    padding-left: 1rem;
+    font-family: monospace;
+}
+
+.cetvrtibox{
+
+    width: 95%;
+    margin: auto;
+    outline-style: auto;
+    outline-width: 2px;
+    outline-color: rgb(215, 173, 215) ;
+    background-color: rgb(215, 173, 215);
+    border: 0px solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 4px solid rgb(107, 10, 44);
+
+}
+
+.h3koduboxu4{
+    size: 30px;
+    color: black;
+    font-size: 30px;
+    padding-left: 1rem;
+    font-family: monospace;
+}
+.krugovicrveni{
+    text-emphasis: filled circle red;
+    -webkit-text-emphasis: filled circle red;
+    text-empgasis-position: over;
+    -webkit-text-emphasis-position:over;
+}
+
