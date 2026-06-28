@@ -210,7 +210,40 @@ li{
 .krugovicrveni{
     text-emphasis: filled circle red;
     -webkit-text-emphasis: filled circle red;
-    text-empgasis-position: over;
+    text-emphasis-position: over;
     -webkit-text-emphasis-position:over;
 }
 
+.footerstyle{
+    
+
+}
+
+.pfootertextstyle{
+    text-align: center;
+    size:20px;
+
+}
+.copytextsize{
+    text-align: center;
+    size: 16px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.crvenalinija{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5px ;
+    text-decoration-skip-ink: none;
+
+}
+
+.isprekidanalinija{
+    border: none;
+    border-top: 2px dashed gray;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
