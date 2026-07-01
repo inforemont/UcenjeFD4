@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(237, 232, 232);
+    justify-content: center;
+    min-height: 100vh;
+    margin 0;
+}
+
+.box{
+    background-color: white;
+    font-family: sans-serif;
+    max-width: 30%;
+    height: 30%;
+    padding-top: 1rem;
+    border-radius: 12px;
+    
+
+
+
+
+
+}
+
+.h1ivanhorvat{
+    size: 30px;
+    color: blue;
+    margin: 12px;
+    padding: 2rem;
+    text-align: center
+}
+.h2junior{
+    font-style: bold;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.p2text{
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 1rem;
+
+
+}

@@ -1,0 +1,83 @@
+body{
+background-color: rgb(232, 230, 230);
+
+    
+}
+
+.container{
+
+    width: 90%;
+    border-color:rgb(232, 230, 230) ;
+    margin: auto;
+    outline-style: auto;
+    border-radius: 12px;
+    outline-width: 2px;
+    outline-color: #e5ebe5 ;
+    background-color: aliceblue ;
+    border: 0px solid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+
+
+}
+
+input,select,option{
+    width:100%;
+}
+
+button{
+    background-color: rgb(12, 198, 12);
+}
+
+btn-delete{
+    background-color: red;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+th{
+    background-color: blue;
+    color:aliceblue;
+    padding:12px;
+
+}
+
+.tdcolorgray{
+    background-color: gainsboro;
+    color:black;
+    padding:12px;
+    
+}
+
+.tdcolorwhite{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    padding:12px;
+    
+}
+tr{
+    margin-bottom: 15px;
+    border: 1px solid beige;
+    text-align: left;
+}
+
+.h1listakorisnika{
+    width: 90%;
+    margin: 20px auto;
+    border-bottom: 3px solid blue;
+
+
+}
+
+h1{
+    border-bottom: 3px solid blue;
+    padding-bottom:  8px;
+    width: 200px;
+    
+    
