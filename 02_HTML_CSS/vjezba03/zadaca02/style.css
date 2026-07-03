@@ -1,0 +1,73 @@
+body{
+
+}
+.p1{
+    background-color: red;
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+}
+.p2{
+    background-color: rgba(144, 144, 249, 0.849);
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.p3{
+    background-color: white;
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.p4{
+    background-color: rgb(116, 24, 203);
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.p5{
+    background-color: rgb(37, 146, 37);
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.s1{
+    background-color: yellow;
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.s2{
+    background-color: orange;
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+.s3{
+    background-color: teal;
+    font-size: 4rem;
+    border: 4px dotted red;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "p1 p1 p1 p1"
+    "c d d b"
+    "e e e b"
+    ;
+    row-gap: 2rem;
+    column-gap: 2rem;
+
