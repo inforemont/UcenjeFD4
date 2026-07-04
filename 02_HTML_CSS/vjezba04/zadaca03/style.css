@@ -1,12 +1,14 @@
 body{
 background-color: rgb(250, 246, 246);
+font-family: Arial, Helvetica, sans-serif;
+padding 20px;
 
     
 }
 
 .container{
 
-    width: 90%;
+    width: 50%;
     border-color:rgb(232, 230, 230) ;
     margin: auto;
     outline-style: auto;
@@ -19,6 +21,9 @@ background-color: rgb(250, 246, 246);
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 
@@ -26,15 +31,15 @@ background-color: rgb(250, 246, 246);
 
 .containermali{
 
-    width: 80%;
-    border-color:rgb(126, 124, 124) ;
+    width: 90%;
+    border-color:rgb(232, 230, 230) ;
     margin: auto;
     outline-style: auto;
     border-radius: 12px;
     outline-width: 2px;
     outline-color: #e5ebe5 ;
-    background-color: aliceblue ;
-    border: 0px solid;
+    background-color: rgb(255, 255, 255) ;
+    border: 1px solid;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -44,15 +49,21 @@ background-color: rgb(250, 246, 246);
 
 }
 
+
+
 input,select,option{
-    width:100%;
+    width: 100%;
 }
 
 button{
-    background-color: rgb(142, 82, 255);
-    height: 40px;
-    width: 80%;
-    justify-content: center;
+    background-color: rgb(89, 0, 255);
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 
