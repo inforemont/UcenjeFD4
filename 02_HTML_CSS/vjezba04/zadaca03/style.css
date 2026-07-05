@@ -1,17 +1,17 @@
 body{
 background-color: rgb(250, 246, 246);
 font-family: Arial, Helvetica, sans-serif;
-padding 20px;
+padding: 20px;
 
     
 }
 
 .container{
 
-    width: 50%;
+    width: 70%;
     border-color:rgb(232, 230, 230) ;
     margin: auto;
-    outline-style: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     outline-width: 2px;
     outline-color: #e5ebe5 ;
@@ -21,10 +21,9 @@ padding 20px;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    min-width: 320px;
+    max-width: 1000px;
+    box-sizing: border-box;
 
 
 }
@@ -34,21 +33,53 @@ padding 20px;
     width: 90%;
     border-color:rgb(232, 230, 230) ;
     margin: auto;
-    outline-style: auto;
     border-radius: 12px;
     outline-width: 2px;
     outline-color: #e5ebe5 ;
     background-color: rgb(255, 255, 255) ;
-    border: 1px solid;
+    border: 1px solid gainsboro;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    align-items: center;
+    box-sizing: border-box;
 
 
 
 }
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e7eaee;
+    font-size: 0.95rem;
+    outline-color: gainsboro;
+}
+
+.checkboxcontainer {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkboxcontainer input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkboxcontainer label {
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+}
 
 
 input,select,option{
@@ -80,10 +111,11 @@ th{
 }
 
 
-.tdcolorwhite{
+.tdcolorwhite td{
     background-color: rgb(255, 255, 255);
     color:black;
     padding:12px;
+    text-align: left;
     
 }
 tr{
