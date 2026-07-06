@@ -1,0 +1,127 @@
+body {
+
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+main {
+  width: 100%;
+  max-width: 800px;
+
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  grid-template-areas:
+    "a b b b b b"
+    "c c d d e e"
+    "f f f f f f";
+
+}
+
+.box-a { grid-area: a; }
+.box-b { grid-area: b; }
+.box-c { grid-area: c; }
+.box-d { grid-area: d; }
+.box-e { grid-area: e; }
+.box-f { grid-area: f;
+
+}
+
+.container > div {
+  border: 2px solid rgb(251, 251, 251);
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29771b;
+
+} 
+
+
+@media (max-width: 599px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .box-a, .box-b, .box-f {
+    display: none !important; 
+  }
+  
+
+  .box-c, .box-d, .box-e {
+    display: flex;
+    grid-area: auto;
+  }
+} 
+
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    grid-template-areas:
+      "b b"  
+      "c f"; 
+  }
+
+  .container > .box-b, 
+  .container > .box-c, 
+  .container > .box-f { 
+    display: flex; 
+  } 
+  
+  .container > .box-a, 
+  .container > .box-d, 
+  .container > .box-e { 
+    display: none; 
+  }
+}
+
+
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px; 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    grid-template-areas:
+      "a b b b b b"
+      "c c d d e e"
+      "f f f f f f";
+  }
+
+  
+  .box-a, .box-b, .box-c, .box-d, .box-e, .box-f {
+    display: flex;
+  }
+}
+}
