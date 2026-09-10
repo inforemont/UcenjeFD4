@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+    <script defer src="alpine3.17.2.js"></script>
+</head>
+<body>
+
+    <h1 x-data="{ naslov: 'Alpine ♥ I' }" x-text="naslov"></h1>
+
+    <div class="brojac" x-data="{ count: 0}">
+
+    <button @click="count++">Povecaj</button>
+
+    <span class="broj" x-text="count"></span>
+
+     <button @click="count--">Smanji</button>
+    </div>
+
+
+    
+    
+</body>
+</html>
