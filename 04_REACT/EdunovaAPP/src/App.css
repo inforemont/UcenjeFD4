@@ -1,4 +1,4 @@
-.podrucje{
-  background-color: antiquewhite;
-  padding: 2rem;
+.app{
+  min-height: 500px;
+  border: 1px solid red;
 }
