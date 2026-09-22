@@ -14,25 +14,14 @@ function App() {
       <Container>
         <Izbornik />
         <Container className='app'>
-
           <Routes>
             <Route path={RouteNames.HOME} element={<Home />} />
             <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />} />
-           
           </Routes>
-
-
         </Container>
-        <Container>
-          <hr />
-          &copy; {IME_APLIKACIJE}
-        </Container>
+        <hr />
+        &copy; {IME_APLIKACIJE}
       </Container>
-
-
-
-
-
     </>
   )
 }

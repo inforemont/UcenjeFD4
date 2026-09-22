@@ -4,9 +4,9 @@
 export default function Home(){
 
 
-    return (
+    return(
         <>
-            Ovdje dodje sadržaj na početnoj stranici
+            Ovdje dođe sadržaj na početnoj stranici
         </>
     )
 }
