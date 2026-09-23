@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Izbornik() {
 
-    const navigate  =useNavigate ()
+    const navigate = useNavigate()
 
 
     return (
@@ -24,7 +24,7 @@ export default function Izbornik() {
                         >Početna</Nav.Link>
                         <NavDropdown title="Programi" id="basic-nav-dropdown">
                             <NavDropdown.Item
-                            onClick={()=>navigate(RouteNames.SMJEROVI)}   //kad je samo jedna linija onda moze ici i bez dodatnih {}
+                            onClick={()=>navigate(RouteNames.SMJEROVI)}
                             >Smjerovi</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
