@@ -5,6 +5,8 @@ import { GrValidate } from "react-icons/gr"
 import { FcApproval, FcDisapprove } from "react-icons/fc"
 import { NumericFormat } from "react-number-format"
 import FormatDatuma from "../../components/FormatDatuma"
+import { RouteNames } from "../../constants"
+import { Link } from "react-router-dom"
 
 
 export default function SmjerPregled() {
@@ -27,6 +29,10 @@ export default function SmjerPregled() {
 
     return (
         <>
+        <Link to={RouteNames.SMJEROVI_DODAJ}>
+        Dodavanje novog smjera 
+
+        </Link>
 
             <Table hover striped bordered>
                 <thead>
@@ -43,22 +49,24 @@ export default function SmjerPregled() {
                         <tr key={smjer.sifra}>
                             <td className="lead">
                                 {smjer.naziv}
-                                </td>
+                            </td>
                             <td className="text-end">
-                                {smjer.trajanje}</td>
+                                {smjer.trajanje}
+                            </td>
                             <td className="desno">
-                                <NumericFormat
+                                <NumericFormat 
                                 value={smjer.cijena}
                                 displayType={'text'}
                                 decimalSeparator=","
                                 decimalScale={2}
-                                fixedDecimalScale='.'
+                                fixedDecimalScale
+                                thousandSeparator='.'
                                 suffix=" €"
                                 prefix="="
                                 />
                             </td>
                             <td style={{textAlign: 'center'}}>
-                                <FormatDatuma datum={smjer.datumPokretanja} prikazDatuma="Nije postavljeno"/>
+                                <FormatDatuma datum={smjer.datumPokretanja} />
                             </td>
                             {/* Ovako se može jednostavno */}
                             {/* <td>{smjer.aktivan ? 'DA' : 'NE'}</td> */}
