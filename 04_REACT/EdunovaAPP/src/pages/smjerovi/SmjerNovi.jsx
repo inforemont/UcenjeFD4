@@ -1,9 +1,33 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RouteNames } from "../../constants";
 import { Col, Row,Button,Form } from "react-bootstrap";
 
 
 export default function SmjerNovi (){
+
+    const navigate=useNavigate()
+
+    async function  dodaj(smjer) {
+        await SmjerService.dodaj(smjer).then(()=>{
+            navigate(RouteNames.SMJEROVI)
+
+        })
+        
+    }
+
+    function obradiSubmit(e){  //e je event
+
+        e.preventDefault()  // nemoj odraditi sumbit
+        const podaci=new FormData(e.target)
+        dodaj({
+        naziv: podaci.get('naziv'),
+        trajanje: parseInt(podaci.get('trajanje')),
+        cijena: parseFloat(podaci.get('cijena')),
+        datumPokretanja: new Date(podaci.get('datumPokretanja')).toISOString(),
+        aktivan: podaci.get('aktivan')==='on'
+        })
+
+    }
 
 
 
@@ -15,7 +39,7 @@ export default function SmjerNovi (){
         </h3>
 
         
-<Form>
+<Form onSubmit={obradiSubmit}>
 
 
     <Form.Group controlId="naziv">
